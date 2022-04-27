@@ -21,9 +21,10 @@ const Index = () => (
           </h1>
 
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            As an infrastructure and a tooling provider, we are fortunate that we don't have to root
-            for anyone to lose. We win if everyone wins. As long as autonomy as a whole moves up, we
-            will succeed.
+            As a multimodal scene data platform, coScene provides a complete toolchain for your R&D
+            and operations needs. Taking advantage of coScene's core engines, you will be able to
+            efficiently track, store, transform, utilize, and share your scene data on a large
+            scale.
           </p>
         </div>
         <div className="lg:w-1/2">
