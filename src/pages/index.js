@@ -103,35 +103,38 @@ const Index = () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+          <h3 className="text-3xl font-semibold leading-tight">
+            The Greater Autonomous Driving Industries
+          </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             Our team of enthusiastic marketers will analyse and evaluate how your company stacks
             against the closest competitors
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<img src={IndustriesAvsPic} />}
     />
+
     <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
-          </h3>
+          <h3 className="text-3xl font-semibold leading-tight">Industrial Internet of Things</h3>
+
           <p className="mt-8 text-xl font-light leading-relaxed">
             Once the market analysis process is completed our staff will search for opportunities
             that are in reach
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<img src={IndustriesOilPic} />}
     />
+
     <SplitSection
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
+            Medical, Healthcare, and Life Science
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             With all the information in place you will be presented with an action plan that your
@@ -139,7 +142,7 @@ const Index = () => (
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<img src={IndustriesHealthcarePic} />}
     />
 
     <section id="our-team" className="py-20 lg:py-40">
