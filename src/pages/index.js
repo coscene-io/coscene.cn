@@ -15,6 +15,10 @@ import DataEnginePic from '../assets/images/data-engine.jpg';
 import SearchEnginePic from '../assets/images/search-engine.jpg';
 import WorkflowEnginePic from '../assets/images/workflow-engine.jpg';
 
+import IndustriesHealthcarePic from '../assets/images/industries-healthcare.jpg';
+import IndustriesAvsPic from '../assets/images/industries-avs.jpg';
+import IndustriesOilPic from '../assets/images/industries-oil.jpg';
+
 const Index = () => (
   <Layout>
     <section className="pt-20 md:pt-40">
@@ -37,12 +41,12 @@ const Index = () => (
       </div>
     </section>
 
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="features" className="py-20 lg:pb-20 lg:pt-24">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Core Engines</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="mb-8 flex flex-col ">
+            <Card className="mb-8 flex flex-col min-h-full ">
               <img
                 className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
                 src={DataEnginePic}
@@ -50,14 +54,14 @@ const Index = () => (
               />
               <p className="font-semibold mt-6 text-xl">Scene Data Management Engine</p>
               <p className="mt-4">
-                Collecting, persisting, managing, streaming, anything.. The Swiss knife for your
+                Collecting, persisting, managing, streaming, anything. The Swiss knife for your
                 scene data.
               </p>
             </Card>
           </div>
 
           <div className="flex-1 px-2">
-            <Card className="mb-8 flex flex-col ">
+            <Card className="mb-8 flex flex-col min-h-full">
               <img
                 className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
                 src={WorkflowEnginePic}
@@ -72,7 +76,7 @@ const Index = () => (
           </div>
 
           <div className="flex-1 px-3">
-            <Card className="mb-8 flex flex-col ">
+            <Card className="mb-8 flex flex-col min-h-full">
               <img
                 className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
                 src={SearchEnginePic}
@@ -88,6 +92,13 @@ const Index = () => (
         </div>
       </div>
     </section>
+
+    <section id="features" className="py-20">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold">Empowering Industrial Revolutions</h2>
+      </div>
+    </section>
+
     <SplitSection
       id="services"
       primarySlot={
