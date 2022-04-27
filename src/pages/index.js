@@ -11,6 +11,10 @@ import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import TeamPic from '../assets/images/team.jpg';
 
+import DataEnginePic from '../assets/images/data-engine.jpg';
+import SearchEnginePic from '../assets/images/search-engine.jpg';
+import WorkflowEnginePic from '../assets/images/workflow-engine.jpg';
+
 const Index = () => (
   <Layout>
     <section className="pt-20 md:pt-40">
@@ -38,8 +42,13 @@ const Index = () => (
         <h2 className="text-3xl lg:text-5xl font-semibold">Core Engines</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Scene Data Management Engine</p>
+            <Card className="mb-8 flex flex-col ">
+              <img
+                className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
+                src={DataEnginePic}
+                alt="data-engine-pic"
+              />
+              <p className="font-semibold mt-6 text-xl">Scene Data Management Engine</p>
               <p className="mt-4">
                 An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
                 velna vitae auctor integer.
