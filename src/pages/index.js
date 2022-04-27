@@ -57,13 +57,13 @@ const Index = () => (
           </div>
 
           <div className="flex-1 px-3">
-            <Card className="mb-8">
+            <Card className="mb-8 flex flex-col ">
               <img
                 className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
                 src={WorkflowEnginePic}
-                alt="data-engine-pic"
+                alt="workflow-engine-pic"
               />
-              <p className="font-semibold text-xl">Large Scale Workflow Engine</p>
+              <p className="font-semibold mt-6 text-xl">Large Scale Workflow Engine</p>
               <p className="mt-4">
                 An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
                 velna vitae auctor integer.
@@ -72,8 +72,13 @@ const Index = () => (
           </div>
 
           <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Semantic Search Engine</p>
+            <Card className="mb-8 flex flex-col ">
+              <img
+                className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
+                src={SearchEnginePic}
+                alt="search-engine-pic"
+              />
+              <p className="font-semibold mt-8 text-xl">Semantic Search Engine</p>
               <p className="mt-4">
                 An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
                 velna vitae auctor integer.
