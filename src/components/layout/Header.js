@@ -6,7 +6,7 @@ const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl text-blue-600">
-        <img className='h-8 mr-2' src={LogoLightPic} />
+        <img width="32px" className='mr-2' src={LogoLightPic} />
         coScene
       </div>
 
@@ -19,7 +19,7 @@ const Header = () => (
           Industries
         </AnchorLink>
 
-        <AnchorLink className="px-4" href="#stats">
+        <AnchorLink className="px-4" href="#our-team">
           Our Team
         </AnchorLink>
 
