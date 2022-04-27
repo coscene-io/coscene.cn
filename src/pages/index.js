@@ -85,7 +85,7 @@ const Index = () => (
               <p className="font-semibold mt-8 text-xl">Semantic Search Engine</p>
               <p className="mt-4">
                 Navigating through EBs of data is as easy as walking down the street. Need something
-                semantic? It's just a query away.
+                semantic? It's just a query away. :)
               </p>
             </Card>
           </div>
