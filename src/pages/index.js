@@ -50,13 +50,13 @@ const Index = () => (
               />
               <p className="font-semibold mt-6 text-xl">Scene Data Management Engine</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Collecting, persisting, managing, streaming, anything.. The Swiss knife for your
+                scene data.
               </p>
             </Card>
           </div>
 
-          <div className="flex-1 px-3">
+          <div className="flex-1 px-2">
             <Card className="mb-8 flex flex-col ">
               <img
                 className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
@@ -65,8 +65,8 @@ const Index = () => (
               />
               <p className="font-semibold mt-6 text-xl">Large Scale Workflow Engine</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Scheduling large scale of workers at your fingertip with all the necessary data
+                ready for your magic.
               </p>
             </Card>
           </div>
@@ -80,8 +80,8 @@ const Index = () => (
               />
               <p className="font-semibold mt-8 text-xl">Semantic Search Engine</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Navigating through EBs of data is as easy as walking down the street. Need something
+                semantic? It's just a query away.
               </p>
             </Card>
           </div>
@@ -155,7 +155,7 @@ const Index = () => (
       <h3 className="text-5xl font-semibold">We want to grow with you!</h3>
 
       <p className="mt-8 mx-0 text-xl font-light px-40">
-        As an infrastructure and a tooling provider, we are fortunate that we don't have to root for
+        As an infrastructure and tooling provider, we are fortunate that we don't have to root for
         anyone to lose. We win if everyone wins. As long as autonomy as a whole moves up, we will
         succeed.
       </p>
