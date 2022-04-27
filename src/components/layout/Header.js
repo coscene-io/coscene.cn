@@ -6,7 +6,7 @@ const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl text-blue-600">
-        <img className='w-6 mr-2' src={LogoLightPic} />
+        <img className='h-8 mr-2' src={LogoLightPic} />
         coScene
       </div>
 
