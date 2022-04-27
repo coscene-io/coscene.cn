@@ -58,6 +58,11 @@ const Index = () => (
 
           <div className="flex-1 px-3">
             <Card className="mb-8">
+              <img
+                className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
+                src={WorkflowEnginePic}
+                alt="data-engine-pic"
+              />
               <p className="font-semibold text-xl">Large Scale Workflow Engine</p>
               <p className="mt-4">
                 An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio

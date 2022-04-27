@@ -15,7 +15,7 @@ export default [
     experiences: [
       { logo: LogoGS, employer: 'GaussianRobotics', title: 'Senior Director' },
       { logo: LogoInceptio, employer: 'Inceptio', title: 'Director' },
-      { logo: LogoApple, employer: 'Apple', title: 'Senior Architecture' },
+      { logo: LogoApple, employer: 'Apple', title: 'Senior Architect' },
     ],
   },
   {
@@ -27,10 +27,10 @@ export default [
       { logo: LogoInceptio, employer: 'Inceptio', title: 'Tech Lead' },
     ],
   },
-  {
-    title: 'Ming Jiang',
-    customerTitle: 'Senior Board Advisor',
-    customerImage: Avatar3,
-    experiences: [{ logo: LogoCruise, employer: 'Cruise', title: 'Staff TPM, Data Infra' }],
-  },
+  // {
+  //   title: '刻集',
+  //   customerTitle: 'Senior Board Advisor',
+  //   customerImage: Avatar3,
+  //   experiences: [{ logo: LogoCruise, employer: 'Cruise', title: 'Staff TPM, Data Infra' }],
+  // },
 ];
