@@ -3,10 +3,10 @@ import Card from './Card';
 
 const CustomerCard = ({ customer }) => (
   <div
-    className='p-10 rounded-lg border border-solid border-gray-200 mb-8'
+    className='p-12 rounded-lg border border-solid border-gray-200 mb-8'
     style={{
       boxShadow: '0 10px 28px rgba(0,0,0,.08)',
-      height: '92%',
+      height: '94%',
     }}
   >
     <div className="flex justify-center items-center">
