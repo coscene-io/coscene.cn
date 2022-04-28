@@ -15,7 +15,7 @@ import DataEnginePic from '../assets/images/data-engine.jpg';
 import SearchEnginePic from '../assets/images/search-engine.jpg';
 import WorkflowEnginePic from '../assets/images/workflow-engine.jpg';
 
-import IndustriesHealthcarePic from '../assets/images/industries-healthcare.jpg';
+import IndustriesRoboticsPic from '../assets/images/industries-robotics.jpg';
 import IndustriesAvsPic from '../assets/images/industries-avs.jpg';
 import IndustriesOilPic from '../assets/images/industries-oil.jpg';
 
@@ -120,6 +120,23 @@ const Index = () => (
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
+          <h3 className="text-3xl font-semibold leading-tight">The Future of Robotics</h3>
+
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            Robots are already all around us, whether they are commercial cleaning robots that wipe
+            down granite floors in shopping malls every night, industrial robotic arms that assemble
+            cars on assembly lines, or special-purposed robots that inspect nuclear power plants
+            nonstop. But to take robots to the next level, there are still a huge number of
+            scenarios they need to learn and understand.
+          </p>
+        </div>
+      }
+      secondarySlot={<img src={IndustriesRoboticsPic} />}
+    />
+
+    <SplitSection
+      primarySlot={
+        <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">Industrial Internet of Things</h3>
 
           <p className="mt-8 text-xl font-light leading-relaxed">
@@ -132,24 +149,6 @@ const Index = () => (
         </div>
       }
       secondarySlot={<img src={IndustriesOilPic} />}
-    />
-
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Medical, Healthcare, and Life Science
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Human's millennia-long research in health and medicine has come to a critical junction
-            where, with powerful computing capabilities, humans have been able to rapidly map
-            genetics. Humanity stands at a critical crossroad where the efficient use of various
-            modern tools to collect, utilize, and study data about our own bodies may be the key to
-            the next level of human prosperity.
-          </p>
-        </div>
-      }
-      secondarySlot={<img src={IndustriesHealthcarePic} />}
     />
 
     <section id="our-team" className="py-20 lg:pb-0">
