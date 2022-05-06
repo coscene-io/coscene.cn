@@ -1,11 +1,8 @@
 import Avatar1 from '../assets/images/avatar-1.jpg';
 import Avatar2 from '../assets/images/avatar-2.jpg';
-import Avatar3 from '../assets/images/avatar-3.jpg';
-
 import LogoApple from '../assets/images/logo-apple.jpg';
 import LogoGS from '../assets/images/logo-gs.jpg';
 import LogoInceptio from '../assets/images/logo-inceptio.jpg';
-import LogoCruise from '../assets/images/logo-cruise.jpg';
 
 export default [
   {
