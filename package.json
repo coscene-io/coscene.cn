@@ -12,15 +12,20 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "classnames": "^2.3.1",
     "gatsby": "^4.0.0",
     "gatsby-plugin-emotion": "^7.0.0",
     "gatsby-plugin-react-helmet": "^5.13.0",
+    "gatsby-plugin-react-i18next": "^1.2.3",
+    "gatsby-source-filesystem": "^4.13.0",
     "gatsby-theme-codebushi": "^1.0.0",
+    "i18next": "^21.6.16",
     "postcss": "^8.3.8",
     "react": "^18.1.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.16.8"
   },
   "devDependencies": {
     "eslint": "^7.21.0",

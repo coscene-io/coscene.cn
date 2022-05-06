@@ -9,7 +9,7 @@ import LogoCruise from '../assets/images/logo-cruise.jpg';
 
 export default [
   {
-    title: 'Yangming huang',
+    title: 'Yangming Huang',
     customerTitle: 'CEO',
     customerImage: Avatar1,
     experiences: [
@@ -27,10 +27,4 @@ export default [
       { logo: LogoInceptio, employer: 'Inceptio', title: 'Tech Lead' },
     ],
   },
-  // {
-  //   title: '刻集',
-  //   customerTitle: 'Senior Board Advisor',
-  //   customerImage: Avatar3,
-  //   experiences: [{ logo: LogoCruise, employer: 'Cruise', title: 'Staff TPM, Data Infra' }],
-  // },
 ];

@@ -1,3 +1,4 @@
+import { Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 const Footer = () => (
@@ -13,7 +14,9 @@ const Footer = () => (
       </div>
 
       <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Connect with us</h2>
+        <h2 className="text-lg font-semibold">
+          <Trans>Connect with us</Trans>
+        </h2>
         <ul className="mt-4 leading-loose">
           <li>
             <a href="https://github.com/coscene-io">GitHub</a>

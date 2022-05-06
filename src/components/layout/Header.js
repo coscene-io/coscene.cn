@@ -1,34 +1,65 @@
+import { Trans, Link, useI18next } from 'gatsby-plugin-react-i18next';
+
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoLightPic from '../../assets/images/logo-light.png';
 
-const Header = () => (
-  <header className="sticky top-0 bg-white shadow">
-    <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
-      <div className="flex items-center text-2xl text-blue-600">
-        <img width="32px" className='mr-2' src={LogoLightPic} />
-        coScene
+const Header = () => {
+  const { languages, changeLanguage } = useI18next();
+
+  return (
+    <header className="sticky top-0 bg-white shadow">
+      <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
+        <div className="flex items-center text-2xl text-blue-600">
+          <img width="32px" className="mr-2" src={LogoLightPic} />
+          coScene
+        </div>
+
+        <div className="flex mt-4 sm:mt-0">
+          <AnchorLink className="px-4" href="#features">
+            <Trans>Core Engines</Trans>
+          </AnchorLink>
+
+          <AnchorLink className="px-4" href="#services">
+            <Trans>Industries</Trans>
+          </AnchorLink>
+
+          <AnchorLink className="px-4" href="#our-team">
+            <Trans>Our Team</Trans>
+          </AnchorLink>
+
+          <AnchorLink className="px-4" href="#contact-us">
+            <Trans>Contact Us</Trans>
+          </AnchorLink>
+
+          <div className="px-2">
+            <a>
+              <span
+              className='cursor-pointer'
+                onClick={(e) => {
+                  e.preventDefault();
+                  changeLanguage('en');
+                }}
+              >
+                English
+              </span>
+            </a>
+            <span> | </span>
+            <a>
+              <span
+                className="cursor-pointer"
+                onClick={(e) => {
+                  changeLanguage('zh');
+                }}
+              >
+                中文
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div className="flex mt-4 sm:mt-0">
-        <AnchorLink className="px-4" href="#features">
-          Core Engines
-        </AnchorLink>
-
-        <AnchorLink className="px-4" href="#services">
-          Industries
-        </AnchorLink>
-
-        <AnchorLink className="px-4" href="#our-team">
-          Our Team
-        </AnchorLink>
-
-        <AnchorLink className="px-4" href="#contact-us">
-          Contact Us
-        </AnchorLink>
-      </div>
-    </div>
-  </header>
-);
+    </header>
+  );
+};
 
 export default Header;
