@@ -1,0 +1,38 @@
+name: ci
+on:
+  push:
+    branches:
+      - main
+    pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node env
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      
+      - name: Build Project
+        run: yarn && yarn build
+
+      - name: Deploy OSS
+        uses: taixw2/deploy-aliyun-oss@v1
+        with:
+          # aliyun config
+          region: oss-cn-hangzhou.aliyuncs.com
+          access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          bucket: ${{ secrets.OSS_TARGET_BUCKET }}
+          secure: true
+          # deploy config
+          entry: public/**/* # glob pattern
+          remote-dir: /
+          path-rewrite: ^public/
+
+
