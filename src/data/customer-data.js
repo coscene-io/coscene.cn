@@ -11,7 +11,7 @@ export default [
     customerImage: Avatar1,
     experiences: [
       { logo: LogoGS, employer: 'GaussianRobotics', title: 'Senior Director' },
-      { logo: LogoInceptio, employer: 'Inceptio', title: 'Director' },
+      { logo: LogoInceptio, employer: 'Inceptio', title: 'Head of Infrastructure' },
       { logo: LogoApple, employer: 'Apple', title: 'Senior Architect' },
     ],
   },
