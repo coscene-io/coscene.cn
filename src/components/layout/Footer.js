@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="flex-1 px-3">
         <div> © {new Date().getFullYear()} coScene Inc. </div>
         <div>
-          <a href="https://beian.mitt.gov.cn" target="_blank" rel="noreferrer">
+          <a href="http://beian.mitt.gov.cn/" target="_blank" rel="noreferrer">
             沪ICP备2022013161号-1
           </a>
         </div>
