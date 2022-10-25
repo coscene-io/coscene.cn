@@ -14,9 +14,18 @@ const Footer = () => (
       </div>
 
       <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">
+        <h2 className="text-lg font-semibold flex flex-col">
           <Trans>Connect with us</Trans>
         </h2>
+        <div className="contacts flex flex-col">
+          <span>
+            <Trans>Email:</Trans>
+            <a href="mailto:contact@coscene.io">contact@coscene.io</a>
+          </span>
+          <span>
+            <Trans>Tel:</Trans>+86 (021)5230-0532
+          </span>
+        </div>
         <ul className="mt-4 flex leading-loose">
           <li>
             <a className="" target="_blank" href="https://github.com/coscene-io">
