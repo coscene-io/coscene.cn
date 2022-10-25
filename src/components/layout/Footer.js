@@ -14,7 +14,7 @@ const Footer = () => (
       </div>
 
       <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold flex flex-col">
+        <h2 className="text-lg font-semibold flex flex-col mb-2">
           <Trans>Connect with us</Trans>
         </h2>
         <div className="contacts flex flex-col">
