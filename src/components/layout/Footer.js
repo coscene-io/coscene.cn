@@ -1,11 +1,17 @@
 import { Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
+import BeianPic from '../../assets/images/beian.png';
 
 const Footer = () => (
   <footer className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
     <div className="flex -mx-3">
       <div className="flex-1 px-3">
         <div> © {new Date().getFullYear()} coScene Inc. </div>
+        <div>
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010102007438">
+            <img src={BeianPic} style={{ display:"inline-block" }}/>沪公网安备 31010102007438号
+          </a>
+        </div>
         <div>
           <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow">
             沪ICP备2022013161号-1
