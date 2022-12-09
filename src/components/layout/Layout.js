@@ -17,10 +17,7 @@ const Layout = ({ children }) => {
           name="description"
           content="场景数据爆炸式增长的当下和未来，刻行帮助各大企业解决增长难题，大幅度降低应用、研发、运维、和售后的成本，降低行业门槛，推动行业发展。"
         />
-        <meta
-          property="og:title"
-          content="刻行，新一代场景数据平台，让你的场景数据应用、开发更高效 | 刻行，场景数据应用平台"
-        />
+        <meta property="og:title" content="coScene 刻行" />
         <meta
           property="og:description"
           content="场景数据爆炸式增长的当下和未来，刻行帮助各大企业解决增长难题，大幅度降低应用、研发、运维、和售后的成本，降低行业门槛，推动行业发展。"
