@@ -12,6 +12,7 @@ import Card from '../components/Card';
 import CustomerCard from '../components/CustomerCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
+import { SEO } from '../components/seo';
 import SplitSection from '../components/SplitSection';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
@@ -198,3 +199,5 @@ export const query = graphql`
     }
   }
 `;
+
+export const Head = () => <SEO />;
