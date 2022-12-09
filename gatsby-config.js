@@ -12,7 +12,6 @@ module.exports = {
         tailwindConfig: `tailwind.config.js`,
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
