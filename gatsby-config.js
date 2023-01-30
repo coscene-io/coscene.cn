@@ -1,4 +1,3 @@
-console.log(__dirname);
 module.exports = {
   siteMetadata: {
     title: `coScene 刻行`,
@@ -6,6 +5,7 @@ module.exports = {
     siteUrl: `https://www.coscene.cn`,
   },
   plugins: [
+    `gatsby-plugin-pnpm`,
     {
       resolve: `gatsby-theme-codebushi`,
       options: {
