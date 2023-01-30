@@ -1,4 +1,4 @@
-import { Trans, Link, useI18next } from 'gatsby-plugin-react-i18next';
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next';
 
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -32,10 +32,14 @@ const Header = () => {
             <Trans>Contact Us</Trans>
           </AnchorLink>
 
+          <a href="https://docs.coscene.cn" target="_blank" className="px-4">
+            <Trans>Docs</Trans>
+          </a>
+
           <div className="px-2">
             <a>
               <span
-              className='cursor-pointer'
+                className="cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
                   changeLanguage('en');
