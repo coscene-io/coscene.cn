@@ -42,7 +42,7 @@ jobs:
         run: pnpm install && pnpm build
 
       - name: Setup OSS
-        uses: manyuanrong/setup-ossutil@v2.0
+        uses: coscene-io/setup-ossutil@v1
         with:
           endpoint: oss-cn-hangzhou.aliyuncs.com
           access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
