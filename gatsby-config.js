@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: 'always',
   siteMetadata: {
     title: `coScene 刻行`,
     description: `场景数据爆炸式增长的当下和未来，刻行帮助各大企业解决增长难题，大幅度降低应用、研发、运维、和售后的成本，降低行业门槛，推动行业发展。`,
