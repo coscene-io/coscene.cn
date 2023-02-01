@@ -1,5 +1,7 @@
 # coScene.io
 
+![](./logo.jpg)
+
 ## Prerequisites
 
 - Node.js: >= 18
