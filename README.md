@@ -1,6 +1,8 @@
-# coScene.io
+<img src="./logo.jpg" alt="coScene Logo" width="300"/>
 
-![](./logo.jpg)
+## ![](./logo.jpg)
+
+#
 
 ## Prerequisites
 
