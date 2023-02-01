@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node env
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
@@ -42,7 +42,7 @@ jobs:
         run: pnpm install && pnpm build
 
       - name: Setup OSS
-        uses: manyuanrong/setup-ossutil@v2.0
+        uses: coscene-io/setup-ossutil@v2
         with:
           endpoint: oss-cn-hangzhou.aliyuncs.com
           access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
