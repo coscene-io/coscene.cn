@@ -9,7 +9,8 @@ const Footer = () => (
         <div> © {new Date().getFullYear()} coScene Inc. </div>
         <div>
           <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010102007438">
-            <img src={BeianPic} style={{ display:"inline-block" }}/>沪公网安备 31010102007438号
+            <img src={BeianPic} style={{ display: 'inline-block' }} />
+            沪公网安备31010102007438号
           </a>
         </div>
         <div>
