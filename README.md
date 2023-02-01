@@ -1,20 +1,23 @@
-<img src="./logo.jpg" alt="coScene Logo" width="250"/>
+## <img src="./logo.jpg" alt="coScene Logo" width="250"/>
 
-This is the source code for coScene.cn.
+---
 
-## Prerequisites
+This is the source code for coScene.cn. The website is using gatsby to generate static pages.
 
-- Node.js: >= 18
-- PNPM >= 7, you can install with brew
+## Development
+
+- [Node.js >= v18](https://nodejs.org/)
+- [pnpm](https://pnpm.io/installation)
 
 ## Setup
 
-- pnpm i
-
-## Dev
-
-- pnpm start
+1. Install dependencies. `pnpm install`
+2. Run dev server. `pnpm start`
 
 ## Deploy
 
 Just push it to the main branch
+
+## Contact
+
+If you have anything, you can open an issue or reach out to contact@coscene.io
