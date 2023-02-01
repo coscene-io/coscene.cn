@@ -1,7 +1,5 @@
 ## <img src="./logo.jpg" alt="coScene Logo" width="250"/>
 
----
-
 This is the source code for coScene.cn. The website is using gatsby to generate static pages.
 
 ## Development
