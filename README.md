@@ -14,7 +14,7 @@ This is the source code for coScene.cn. The website is using gatsby to generate 
 
 ## Deploy
 
-Just push it to the main branch
+Push the changes to the `main` branch
 
 ## Contact
 
