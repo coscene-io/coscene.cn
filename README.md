@@ -1,8 +1,6 @@
-<img src="./logo.jpg" alt="coScene Logo" width="300"/>
+<img src="./logo.jpg" alt="coScene Logo" width="250"/>
 
-## ![](./logo.jpg)
-
-#
+This is the source code for coScene.cn.
 
 ## Prerequisites
 
