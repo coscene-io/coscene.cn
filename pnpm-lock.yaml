@@ -15,7 +15,7 @@ specifiers:
   gatsby-plugin-emotion: ^8.5.0
   gatsby-plugin-pnpm: ^1.2.10
   gatsby-plugin-react-i18next: ^3.0.1
-  gatsby-source-filesystem: ^4.13.0
+  gatsby-source-filesystem: ^5.5.0
   gatsby-theme-codebushi: ^1.0.0
   i18next: ^22.4.9
   postcss: ^8.3.8
@@ -31,7 +31,7 @@ dependencies:
   gatsby: 5.5.0_qyabkb5h6b7mifciv426iu4uca
   gatsby-plugin-emotion: 8.5.0_4izozi7hyhjxrzz7o3ajlzij2i
   gatsby-plugin-react-i18next: 3.0.1_fud4p6gocvczhdzlxdfymewrdi
-  gatsby-source-filesystem: 4.25.0_gatsby@5.5.0
+  gatsby-source-filesystem: 5.5.0_gatsby@5.5.0
   gatsby-theme-codebushi: 1.0.0_ox5bzeoaotmqiaj3vwms4axiqe
   i18next: 22.4.9
   postcss: 8.4.21
@@ -5491,15 +5491,6 @@ packages:
   /fs-exists-cached/1.0.0:
     resolution: {integrity: sha512-kSxoARUDn4F2RPXX48UXnaFKwVU7Ivd/6qpzZL29MCDmr9sTvybv4gFCp+qaI4fM9m0z9fgz/yJvi56GAz+BZg==}
 
-  /fs-extra/10.1.0:
-    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
-    engines: {node: '>=12'}
-    dependencies:
-      graceful-fs: 4.2.10
-      jsonfile: 6.1.0
-      universalify: 2.0.0
-    dev: false
-
   /fs-extra/11.1.0:
     resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
     engines: {node: '>=14.14'}
@@ -5607,27 +5598,6 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
-
-  /gatsby-core-utils/3.25.0:
-    resolution: {integrity: sha512-lmMDwbnKpqAi+8WWd7MvCTCx3E0u7j8sbVgydERNCYVxKVpzD/aLCH4WPb4EE9m1H1rSm76w0Z+MaentyB/c/Q==}
-    engines: {node: '>=14.15.0'}
-    dependencies:
-      '@babel/runtime': 7.20.13
-      ci-info: 2.0.0
-      configstore: 5.0.1
-      fastq: 1.15.0
-      file-type: 16.5.4
-      fs-extra: 10.1.0
-      got: 11.8.6
-      import-from: 4.0.0
-      lmdb: 2.5.3
-      lock: 1.1.0
-      node-object-hash: 2.3.10
-      proper-lockfile: 4.1.2
-      resolve-from: 5.0.0
-      tmp: 0.2.1
-      xdg-basedir: 4.0.0
-    dev: false
 
   /gatsby-core-utils/4.5.0:
     resolution: {integrity: sha512-8ckCNXB7iasqLLoBTJLDzXwUcJ/cNUZVHo3+3cyMA9CLc8pfZiXtlp5qaOl0J+Q1qdorfENAnTvNEddXABfIZw==}
@@ -5893,23 +5863,22 @@ packages:
       '@types/sharp': 0.31.1
       sharp: 0.31.3
 
-  /gatsby-source-filesystem/4.25.0_gatsby@5.5.0:
-    resolution: {integrity: sha512-gja4++bPkYpnum4/TxFicr3zRHBArnM2HjT77EE4EuDhdl6qlJYr/heD09LIPN2jdR5gmPwMDjIZnuYZ/6j/aQ==}
-    engines: {node: '>=14.15.0'}
+  /gatsby-source-filesystem/5.5.0_gatsby@5.5.0:
+    resolution: {integrity: sha512-STuHuf3who/9Nx5NW00fpRnaob0TXB3YftrPJ1qnZ+N5pfT0hyOrRm1EhSvrDAlXm3qT45fWddVDFLpaMU8+8g==}
+    engines: {node: '>=18.0.0'}
     peerDependencies:
-      gatsby: ^4.0.0-next
+      gatsby: ^5.0.0-next
     dependencies:
       '@babel/runtime': 7.20.13
       chokidar: 3.5.3
       file-type: 16.5.4
-      fs-extra: 10.1.0
+      fs-extra: 11.1.0
       gatsby: 5.5.0_qyabkb5h6b7mifciv426iu4uca
-      gatsby-core-utils: 3.25.0
-      md5-file: 5.0.0
-      mime: 2.6.0
+      gatsby-core-utils: 4.5.0
+      mime: 3.0.0
       pretty-bytes: 5.6.0
       valid-url: 1.0.9
-      xstate: 4.32.1
+      xstate: 4.35.4
     dev: false
 
   /gatsby-telemetry/4.5.0:
@@ -7239,12 +7208,6 @@ packages:
   /map-cache/0.2.2:
     resolution: {integrity: sha512-8y/eV9QQZCiyn1SprXSrCmqJN0yNRATe+PO8ztwqrvrbdRLA3eYJF0yaR0YayLWkMbsQSKWS9N2gPcGEc4UsZg==}
     engines: {node: '>=0.10.0'}
-
-  /md5-file/5.0.0:
-    resolution: {integrity: sha512-xbEFXCYVWrSx/gEKS1VPlg84h/4L20znVIulKw6kMfmBUAZNAnF00eczz9ICMl+/hjQGo5KSXRxbL/47X3rmMw==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    dev: false
 
   /mdn-data/2.0.14:
     resolution: {integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==}
@@ -10002,10 +9965,6 @@ packages:
   /xmlhttprequest-ssl/2.0.0:
     resolution: {integrity: sha512-QKxVRxiRACQcVuQEYFsI1hhkrMlrXHPegbbd1yn9UHOmRxY+si12nQYzri3vbzt8VdTTRviqcKxcyllFas5z2A==}
     engines: {node: '>=0.4.0'}
-
-  /xstate/4.32.1:
-    resolution: {integrity: sha512-QYUd+3GkXZ8i6qdixnOn28bL3EvA++LONYL/EMWwKlFSh/hiLndJ8YTnz77FDs+JUXcwU7NZJg7qoezoRHc4GQ==}
-    dev: false
 
   /xstate/4.35.4:
     resolution: {integrity: sha512-mqRBYHhljP1xIItI4xnSQNHEv6CKslSM1cOGmvhmxeoDPAZgNbhSUYAL5N6DZIxRfpYY+M+bSm3mUFHD63iuvg==}
