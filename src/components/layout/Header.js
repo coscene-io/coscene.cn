@@ -15,7 +15,7 @@ const Header = () => {
           coScene
         </div>
 
-        <div className="flex mt-4 sm:mt-0">
+        <div className="flex mt-4 sm:mt-0 items-center">
           <AnchorLink className="px-4" href="#features">
             <Trans>Core Engines</Trans>
           </AnchorLink>
@@ -34,6 +34,10 @@ const Header = () => {
 
           <a href="https://docs.coscene.cn" target="_blank" className="px-4">
             <Trans>Docs</Trans>
+          </a>
+
+          <a href="https://coscene.cn/login?demoSite=true" target="_blank" className="px-4">
+            <Trans>Demo</Trans>
           </a>
 
           <div className="px-2">
