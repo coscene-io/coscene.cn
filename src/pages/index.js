@@ -11,9 +11,9 @@ import WorkflowEnginePic from '../assets/images/workflow-engine.jpg';
 import Card from '../components/Card';
 import CustomerCard from '../components/CustomerCard';
 import LabelText from '../components/LabelText';
+import SplitSection from '../components/SplitSection';
 import Layout from '../components/layout/Layout';
 import { SEO } from '../components/seo';
-import SplitSection from '../components/SplitSection';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 
@@ -107,9 +107,7 @@ const Index = () => {
             <h3 className="text-3xl font-semibold leading-tight">
               <Trans>The Greater Autonomous Driving Industries</Trans>
             </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              {t('industry_autonomous_explain')}
-            </p>
+            <p className="mt-8 text-xl font-light leading-relaxed">{t('industry_autonomous_explain')}</p>
           </div>
         }
         secondarySlot={<img src={IndustriesAvsPic} />}
@@ -123,9 +121,7 @@ const Index = () => {
               <Trans>The Future of Robotics</Trans>
             </h3>
 
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              {t('industry_robotics_explain')}
-            </p>
+            <p className="mt-8 text-xl font-light leading-relaxed">{t('industry_robotics_explain')}</p>
           </div>
         }
         secondarySlot={<img src={IndustriesRoboticsPic} />}
@@ -164,10 +160,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section
-        id="contact-us"
-        className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
-      >
+      <section id="contact-us" className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
         <h3 className="text-5xl font-semibold">
           <Trans>We want to grow with you!</Trans>
         </h3>
@@ -186,9 +179,7 @@ export default Index;
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(
-      filter: { ns: { in: ["translation", "index"] }, language: { eq: $language } }
-    ) {
+    locales: allLocale(filter: { ns: { in: ["translation", "index"] }, language: { eq: $language } }) {
       edges {
         node {
           ns
