@@ -28,7 +28,7 @@ module.exports = {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
         languages: [`en`, `zh`],
         defaultLanguage: `en`,
-        // if you are using Helmet, you must include siteUrl, and make sure you add http:https
+
         siteUrl: `https://coscene.cn/`,
         // you can pass any i18next options
         i18nextOptions: {

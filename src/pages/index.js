@@ -11,6 +11,7 @@ import WorkflowEnginePic from '../assets/images/workflow-engine.jpg';
 import Card from '../components/Card';
 import CustomerCard from '../components/CustomerCard';
 import LabelText from '../components/LabelText';
+import Partners from '../components/Partners';
 import SplitSection from '../components/SplitSection';
 import Layout from '../components/layout/Layout';
 import { SEO } from '../components/seo';
@@ -39,6 +40,10 @@ const Index = () => {
             <HeroImage />
           </div>
         </div>
+      </section>
+
+      <section id="partners" className="pt-20 lg:pt-24">
+        <Partners />
       </section>
 
       <section id="features" className="py-20 lg:pb-20 lg:pt-24">
