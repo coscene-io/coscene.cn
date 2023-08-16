@@ -10,7 +10,7 @@ const Partners = () => {
   return (
     <div className="container mx-auto text-center flex flex-col">
       <div className="mb-8">
-        <h2 className="text-xl text-gray-700 lg:text-2xl font-semibold">
+        <h2 className="text-xl text-gray-900 lg:text-2xl font-semibold">
           <Trans>Trusted by industrial leaders</Trans>
         </h2>
       </div>

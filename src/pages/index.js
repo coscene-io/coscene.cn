@@ -1,6 +1,9 @@
 import { graphql } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
+import DemoQrCodePic from '../assets/images/contacts/demo-qrcode.png';
+import GroupQrCodePic from '../assets/images/contacts/group-qrcode.png';
+import WxQrCodePic from '../assets/images/contacts/wx-qrcode.jpeg';
 import DataEnginePic from '../assets/images/data-engine.jpg';
 import IndustriesAvsPic from '../assets/images/industries-avs.jpg';
 import IndustriesOilPic from '../assets/images/industries-oil.jpg';
@@ -172,9 +175,26 @@ const Index = () => {
 
         <p className="mt-8 mx-0 text-xl font-light px-40">{t('grow_text')}</p>
 
-        <p className="mt-8 text-2xl">
-          <Trans>Contact us now</Trans> <a href="mailto:contact@coscene.io">contact@coscene.io</a>
-        </p>
+        <div className="mt-8 text-2xl flex justify-between mx-auto md:w-1/2">
+          <div className="flex flex-col">
+            <div className="border-2 border-gray-900 rounded mx-10">
+              <img width={160} src={WxQrCodePic}></img>
+            </div>
+            <span className="text-sm lg:text-xl">{t('coscene-wechat-official-account')}</span>
+          </div>
+          <div className="flex flex-col">
+            <div className="border-2 border-gray-900 rounded mx-10">
+              <img width={160} src={DemoQrCodePic}></img>
+            </div>
+            <span className="text-sm lg:text-xl">{t('request-demo')}</span>
+          </div>
+          <div className="flex flex-col">
+            <div className="border-2 border-gray-900 rounded mx-10">
+              <img width={160} src={GroupQrCodePic}></img>
+            </div>
+            <span className="text-sm lg:text-xl">{t('join-wecom-group')}</span>
+          </div>
+        </div>
       </section>
     </Layout>
   );
