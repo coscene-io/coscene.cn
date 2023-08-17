@@ -28,8 +28,8 @@ const Index = () => {
     <Layout>
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
-          <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+          <div className="text-center lg:w-1/2 lg:text-left">
+            <h1 className="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl">
               <Trans> {t('One platform for all your')}</Trans>
               <span className="text-blue-600">
                 <Trans> Scene </Trans>
@@ -37,7 +37,7 @@ const Index = () => {
               <Trans>data operations</Trans>
             </h1>
 
-            <p className="text-xl lg:text-2xl mt-6 font-light">{t('platform_introduction')}</p>
+            <p className="mt-6 text-xl font-light lg:text-2xl">{t('platform_introduction')}</p>
           </div>
           <div className="lg:w-1/2">
             <HeroImage />
@@ -51,18 +51,18 @@ const Index = () => {
 
       <section id="features" className="py-20 lg:pb-20 lg:pt-24">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">
+          <h2 className="text-3xl font-semibold lg:text-5xl">
             <Trans>Core Engines</Trans>
           </h2>
-          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+          <div className="mt-12 flex flex-col sm:-mx-3 sm:flex-row">
             <div className="flex-1 px-3">
-              <Card className="mb-8 flex flex-col min-h-full ">
+              <Card className="mb-8 flex min-h-full flex-col ">
                 <img
-                  className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
+                  className="border-grey-200 h-1/2 w-1/2 self-center rounded-full border"
                   src={DataEnginePic}
                   alt="data-engine-pic"
                 />
-                <p className="font-semibold mt-6 text-xl">
+                <p className="mt-6 text-xl font-semibold">
                   <Trans>Scene Data Management Engine</Trans>
                 </p>
                 <p className="mt-4">{t('scene_data_management_engine_explain')}</p>
@@ -70,13 +70,13 @@ const Index = () => {
             </div>
 
             <div className="flex-1 px-2">
-              <Card className="mb-8 flex flex-col min-h-full">
+              <Card className="mb-8 flex min-h-full flex-col">
                 <img
-                  className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
+                  className="border-grey-200 h-1/2 w-1/2 self-center rounded-full border"
                   src={WorkflowEnginePic}
                   alt="workflow-engine-pic"
                 />
-                <p className="font-semibold mt-6 text-xl">
+                <p className="mt-6 text-xl font-semibold">
                   <Trans>Large Scale Workflow Engine</Trans>
                 </p>
                 <p className="mt-4">{t('large_scale_workflow_engine_explain')}</p>
@@ -84,13 +84,13 @@ const Index = () => {
             </div>
 
             <div className="flex-1 px-3">
-              <Card className="mb-8 flex flex-col min-h-full">
+              <Card className="mb-8 flex min-h-full flex-col">
                 <img
-                  className="w-1/2 h-1/2 self-center rounded-full border border-grey-200"
+                  className="border-grey-200 h-1/2 w-1/2 self-center rounded-full border"
                   src={SearchEnginePic}
                   alt="search-engine-pic"
                 />
-                <p className="font-semibold mt-8 text-xl">
+                <p className="mt-8 text-xl font-semibold">
                   <Trans>Semantic Search Engine</Trans>
                 </p>
                 <p className="mt-4">{t('semantic_search_engine_explain')}</p>
@@ -102,7 +102,7 @@ const Index = () => {
 
       <section id="features" className="py-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">
+          <h2 className="text-3xl font-semibold lg:text-5xl">
             <Trans>Empowering Industrial Revolutions</Trans>
           </h2>
         </div>
@@ -150,11 +150,11 @@ const Index = () => {
 
       <section id="our-team" className="py-20 lg:pb-0">
         <div className="container mx-auto">
-          <LabelText className="mb-8 text-gray-600 text-center">
+          <LabelText className="mb-8 text-center text-gray-600">
             <Trans>We are industrial experts</Trans>
           </LabelText>
 
-          <div className="flex flex-col mb-4 md:flex-row md:-mx-3">
+          <div className="mb-4 flex flex-col md:-mx-3 md:flex-row">
             {customerData.map((customer, id) => (
               <div key={id} className="flex-1 px-3 lg:m-4">
                 <CustomerCard key={id} customer={customer} />
@@ -168,31 +168,31 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact-us" className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+      <section
+        id="contact-us"
+        style={{ background: '#4199E126' }}
+        className="container mx-auto my-20 rounded-lg bg-sky-100 pb-24 pt-20 text-center"
+      >
         <h3 className="text-5xl font-semibold">
           <Trans>We want to grow with you!</Trans>
         </h3>
 
-        <p className="mt-8 mx-0 text-xl font-light px-40">{t('grow_text')}</p>
+        <p className="mx-0 mt-3 px-40 text-xl font-light">{t('grow_text')}</p>
 
-        <div className="mt-8 text-2xl flex justify-between mx-auto md:w-1/2">
-          <div className="flex flex-col">
-            <div className="border-2 border-gray-900 rounded mx-10">
-              <img width={160} src={WxQrCodePic}></img>
-            </div>
-            <span className="text-sm lg:text-xl">{t('coscene-wechat-official-account')}</span>
+        <div className="mx-auto mt-8 flex justify-center text-2xl">
+          <div className="mx-5 flex w-32 grow-0 flex-col items-center">
+            <img className="rounded border-2 border-gray-900" width={80} src={WxQrCodePic}></img>
+            <span className="mt-2 text-sm lg:text-xl">{t('coscene-wechat-official-account')}</span>
           </div>
-          <div className="flex flex-col">
-            <div className="border-2 border-gray-900 rounded mx-10">
-              <img width={160} src={DemoQrCodePic}></img>
-            </div>
-            <span className="text-sm lg:text-xl">{t('request-demo')}</span>
+
+          <div className="mx-5 flex w-32 grow-0 flex-col items-center">
+            <img className="rounded border-2 border-gray-900" width={80} src={DemoQrCodePic}></img>
+            <span className="mt-2 text-sm lg:text-xl">{t('request-demo')}</span>
           </div>
-          <div className="flex flex-col">
-            <div className="border-2 border-gray-900 rounded mx-10">
-              <img width={160} src={GroupQrCodePic}></img>
-            </div>
-            <span className="text-sm lg:text-xl">{t('join-wecom-group')}</span>
+
+          <div className="mx-5 flex w-32 grow-0 flex-col items-center">
+            <img className="rounded border-2 border-gray-900" width={80} src={GroupQrCodePic}></img>
+            <span className="mt-2 text-sm lg:text-xl">{t('join-wecom-group')}</span>
           </div>
         </div>
       </section>
