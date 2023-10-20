@@ -1,5 +1,5 @@
 # build environment
-FROM node:16-buster as builder
+FROM node:20-buster as builder
 WORKDIR /build
 ENV PATH /build/node_modules/.bin:$PATH
 COPY package.json yarn.lock ./
@@ -8,7 +8,7 @@ COPY . .
 RUN yarn build --verbose
 
 # production environment
-FROM node:16-alpine
+FROM node:20-alpine
 WORKDIR /
 
 RUN yarn global add serve
