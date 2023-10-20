@@ -8,7 +8,7 @@ COPY . .
 RUN yarn build --verbose
 
 # production environment
-FROM node:16-alpine
+FROM node:21-alpine
 WORKDIR /
 
 RUN yarn global add serve
