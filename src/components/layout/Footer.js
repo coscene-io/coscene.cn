@@ -3,8 +3,8 @@ import React from 'react';
 import BeianPic from '../../assets/images/beian.png';
 
 const Footer = () => (
-  <footer className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
-    <div className="flex -mx-3">
+  <footer className="container mx-auto mb-8 mt-48 px-3 py-16 text-gray-800">
+    <div className="-mx-3 flex">
       <div className="flex-1 px-3">
         <div> © {new Date().getFullYear()} coScene Inc. </div>
         <div>
@@ -21,7 +21,7 @@ const Footer = () => (
       </div>
 
       <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold flex flex-col mb-2">
+        <h2 className="mb-2 flex flex-col text-lg font-semibold">
           <Trans>Connect with us</Trans>
         </h2>
         <div className="contacts flex flex-col">
@@ -32,7 +32,11 @@ const Footer = () => (
           <span>
             <Trans>Tel:</Trans>+86 (021)5230-0532
           </span>
+          <span>
+            <Trans>Address:</Trans> 云谷路599弄6号620室J, 上海市, Shanghai, 201801, China
+          </span>
         </div>
+
         <ul className="mt-4 flex leading-loose">
           <li>
             <a className="" target="_blank" href="https://github.com/coscene-io">
