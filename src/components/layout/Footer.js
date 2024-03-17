@@ -7,6 +7,7 @@ const Footer = () => (
     <div className="-mx-3 flex">
       <div className="flex-1 px-3">
         <div> © {new Date().getFullYear()} coScene Inc. </div>
+        <div> 上海云刻行信息科技有限公司 </div>
         <div>
           <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010102007438">
             <img src={BeianPic} style={{ display: 'inline-block' }} />
