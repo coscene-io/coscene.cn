@@ -9,13 +9,13 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 bg-white shadow">
-      <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
+      <div className="container mx-auto flex flex-col items-center justify-between px-8 py-4 sm:flex-row">
         <div className="flex items-center text-2xl text-blue-600">
           <img width="32px" className="mr-2" src={LogoLightPic} />
           coScene
         </div>
 
-        <div className="flex mt-4 sm:mt-0 items-center">
+        <div className="mt-4 flex items-center sm:mt-0">
           <AnchorLink className="px-4" href="#features">
             <Trans>Core Engines</Trans>
           </AnchorLink>
@@ -34,10 +34,6 @@ const Header = () => {
 
           <a href="https://docs.coscene.cn" target="_blank" className="px-4">
             <Trans>Docs</Trans>
-          </a>
-
-          <a href="https://coscene.cn/login?demoSite=true" target="_blank" className="px-4">
-            <Trans>Demo</Trans>
           </a>
 
           <div className="px-2">
